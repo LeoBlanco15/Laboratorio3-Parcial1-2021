@@ -49,23 +49,12 @@ function AddElement(marca, modelo, año)
     tdYear.appendChild(textYear);
     textYear.id = Math.random().toString();
     SetYears(textYear.id);
+    SelectYear(textYear.id, año);
 }
 
 function SetInputs() 
 {
     
-}
-function CreateYears() 
-{
-    var currentYear = 2020;    
-    var earliestYear = 2000;     
-    while (currentYear >= earliestYear) {      
-        var dateOption = document.createElement('option');          
-        dateOption.text = currentYear;      
-        dateOption.value = currentYear;        
-        dateDropdown.add(dateOption);      
-        currentYear -= 1;    
-    }
 }
 function SetYears(id) 
 {
@@ -80,7 +69,11 @@ function SetYears(id)
         currentYear -= 1;    
     }
 }
-
+function SelectYear(id, valueToSelect) 
+{
+    var element = document.getElementById(id);
+    element.value = valueToSelect;
+}
 function GetId(object) 
 {
     if(document.getElementById(object) != null)
