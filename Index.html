@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Leonardo Blanco</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script type="text/javascript" src="./js/Funciones.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Lista de autos</h1>
+        <button id="Agregar" class="button">Agregar</button>
+    </div>
+    <div>
+        <table id="TablaAutos">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody id="TablaBody">
+                
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+    <div id="nuevoAuto" class="popUp">
+
+        
+        <div class="modal-content">
+          <label class="input">Marca</label>
+          <br>
+          <input class="input" type="text" id="nombreNuevoAuto"/>
+          <br>
+          <label class="input">Modelo</label>
+          <br>
+          <input class="input" type="text" id="modeloNuevoAuto"/>
+          <br>
+          <label class="input">Año</label>
+          <br>
+          <select  id='date-dropdown'></select>
+          <br>
+          <button id="Aceptar" class="input">Aceptar</button>
+          <button id="Cancelar" class=".buttonCancel">Cancelar</button>
+        </div>
+      
+      </div>
+      
+</body>
+</html>
